@@ -3,19 +3,19 @@ import { useInView } from "react-intersection-observer";
 
 const services = [
   {
-    title: "Exploration",
-    description: "Advanced geological surveys and resource identification",
-    icon: "🔍",
+    title: "Areas of Service",
+    description: "Our company offers specialized products and services designed specifically for the oil and gas industry in Navarro, Freestone, Henderson, Anderson, and nearby counties, ensuring targeted solutions for businesses in the region.",
+    icon: "🎯",
   },
   {
-    title: "Production",
-    description: "Efficient extraction and processing solutions",
-    icon: "⚡",
+    title: "Reliable",
+    description: "As a trusted service provider committed to excellence, we consistently deliver superior products and services. With our extensive expertise and dedicated teams, we are equipped to successfully manage projects of any scale or complexity.",
+    icon: "⭐",
   },
   {
-    title: "Distribution",
-    description: "Global network of energy transportation",
-    icon: "🌐",
+    title: "Environmental Friendly",
+    description: "Safeguarding the environment and public health is paramount in our waste disposal practices. To uphold these standards, we meticulously adhere to the rigorous regulations set forth by the Texas Railroad Commission (TRRC) and the Environmental Protection Agency (EPA).",
+    icon: "🌿",
   },
 ];
 
