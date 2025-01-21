@@ -1,90 +1,95 @@
-import { Building, Facebook, Twitter, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-primary text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
+          {/* Logo and Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <Building className="h-8 w-8 text-purple-400" />
-              <span className="ml-2 text-xl font-bold text-white">EnergyTech</span>
-            </div>
-            <p className="text-sm">
-              Leading the way in sustainable energy production and innovative oil &
-              gas solutions.
+            <img 
+              src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
+              alt="2K Operating LLC Logo" 
+              className="h-12 w-auto"
+            />
+            <p className="text-sm text-gray-200">
+              Your trusted partner in transportation and logistics solutions.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="hover:text-white transition-colors">
-                  About Us
+                <a href="/" className="hover:text-gray-200 transition-colors">
+                  Home
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Services
+                <a href="#cdl-application" className="hover:text-gray-200 transition-colors">
+                  CDL Driver Application
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition-colors">
-                  Contact
+                <a href="#new-customer" className="hover:text-gray-200 transition-colors">
+                  New Customer Form
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+          {/* Contact Information */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center">
-                <Mail className="h-4 w-4 mr-2" />
-                <span>info@energytech.com</span>
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+1234567890" className="hover:text-gray-200 transition-colors">
+                  (123) 456-7890
+                </a>
               </li>
-              <li className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
-                <span>+1 (555) 123-4567</span>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:info@2koperating.com" className="hover:text-gray-200 transition-colors">
+                  info@2koperating.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Dallas, TX</span>
               </li>
             </ul>
           </div>
 
-          {/* Social Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
+          {/* Social Media */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="hover:text-purple-400 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook />
+              <a href="#" className="hover:text-gray-200 transition-colors">
+                <Facebook className="h-6 w-6" />
               </a>
-              <a
-                href="#"
-                className="hover:text-purple-400 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter />
+              <a href="#" className="hover:text-gray-200 transition-colors">
+                <Instagram className="h-6 w-6" />
               </a>
-              <a
-                href="#"
-                className="hover:text-purple-400 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin />
+              <a href="#" className="hover:text-gray-200 transition-colors">
+                <Linkedin className="h-6 w-6" />
               </a>
             </div>
+            <Button 
+              className="w-full bg-white text-primary hover:bg-gray-100"
+              onClick={() => window.location.href = '#contact'}
+            >
+              Contact Us
+            </Button>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-          <p>© 2024 EnergyTech. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm">
+          <p>© {currentYear} 2K Operating LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
