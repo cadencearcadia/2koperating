@@ -23,9 +23,6 @@ const Hero = () => {
           <h1 className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-tight">
             "WE GUARANTEE TO BEAT OUR COMPETITORS RATES"
           </h1>
-          <p className="text-base md:text-xl text-gray-200 mx-auto leading-relaxed">
-            2K Operating has been serving the East Texas area for over 18 years, with bonded and insured drivers who have gone through extensive background checks and have a minimum of 5 years' experience. We offer competitive pricing, same day pick-up times in most cases, and low water disposal rates due to our company owned water injection wells. Our drivers are available 24/7 and can gauge and color cut tanks upon request at no extra charge.
-          </p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
