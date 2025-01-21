@@ -90,8 +90,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm">
-          <p>© {currentYear} 2K Operating LLC. All rights reserved.</p>
+        <div className="mt-6 pt-4 border-t border-white/10 text-center text-sm bg-[#1A1F2C] py-3">
+          <p className="text-gray-300">© {currentYear} 2K Operating LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
