@@ -4,7 +4,6 @@ import { ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
@@ -33,7 +32,6 @@ const Index = () => {
 
       <div ref={ref} className="space-y-0">
         <Services />
-        <Stats />
         <About />
         <Testimonials />
         <Newsletter />
