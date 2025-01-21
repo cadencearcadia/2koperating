@@ -17,7 +17,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Building className="h-8 w-8 text-purple-600" />
+            <Building className="h-8 w-8 text-primary" />
             <span className="ml-2 text-xl font-bold">EnergyTech</span>
           </div>
 
@@ -32,7 +32,7 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="bg-purple-600 hover:bg-purple-700">
+            <Button className="bg-primary hover:bg-primary/90 text-white">
               Get Started
             </Button>
           </div>
@@ -67,7 +67,7 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-purple-600 hover:bg-purple-700 mt-4">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
               Get Started
             </Button>
           </div>
