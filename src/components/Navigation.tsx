@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building, Phone, Mail, Menu, X } from "lucide-react";
+import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -17,8 +17,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Building className="h-8 w-8 text-primary" />
-            <span className="ml-2 text-xl font-bold">EnergyTech</span>
+            <a href="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
+                alt="2K Operating LLC Logo" 
+                className="h-12 w-auto"
+              />
+            </a>
           </div>
 
           {/* Desktop Menu */}
