@@ -29,16 +29,16 @@ const Testimonials = () => {
   });
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section ref={ref} className="py-16 md:py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">What Our Clients Say</h2>
           <p className="text-gray-600">
             Trusted by leading companies in the energy sector
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
@@ -54,7 +54,7 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full"
                 />
                 <div className="ml-4">
-                  <h3 className="font-semibold">{testimonial.name}</h3>
+                  <h3 className="font-semibold text-primary">{testimonial.name}</h3>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
