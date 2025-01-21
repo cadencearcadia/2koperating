@@ -40,7 +40,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <ul className="space-y-2">
@@ -62,7 +61,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Social Media */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
@@ -84,13 +82,13 @@ const Footer = () => {
             </Button>
           </div>
         </div>
-
-        <div className="mt-8 border-t border-white/10">
-          <div className="py-4 text-center text-sm bg-[#0B0F1A] text-gray-300">
-            <p className="font-light tracking-wide">
-              © {currentYear} 2K Operating LLC. All rights reserved.
-            </p>
-          </div>
+      </div>
+      
+      <div className="bg-[#0B0F1A] border-t border-white/10">
+        <div className="py-3 text-center text-sm text-gray-300">
+          <p className="font-light tracking-wide">
+            © {currentYear} 2K Operating LLC. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
