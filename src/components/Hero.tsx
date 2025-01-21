@@ -10,6 +10,9 @@ const Hero = () => {
           src="/lovable-uploads/b20aaa8f-f0a0-41e9-bcf7-56b27e386fb5.png"
           alt="Oil rig at sunset"
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </div>
 

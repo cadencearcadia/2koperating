@@ -14,6 +14,8 @@ const Footer = () => {
               src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
               alt="2K Operating LLC Logo" 
               className="h-12 w-auto"
+              loading="lazy"
+              decoding="async"
             />
             <p className="text-sm text-gray-200">
               Your trusted partner in transportation and logistics solutions.
