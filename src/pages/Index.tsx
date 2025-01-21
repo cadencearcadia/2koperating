@@ -31,8 +31,8 @@ const Index = () => {
       </motion.div>
 
       <div ref={ref} className="space-y-0">
-        <About />
         <Services />
+        <About />
         <Newsletter />
         <DetailedServices />
         <Contact />
