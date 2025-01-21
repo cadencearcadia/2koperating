@@ -81,8 +81,8 @@ const DetailedServices = () => {
                 className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="mb-4 p-3 bg-primary/5 rounded-full">
-                    <Icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                  <div className="mb-4 p-3 bg-[#f3ce49]/10 rounded-full">
+                    <Icon className="w-8 h-8 text-[#f3ce49]" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-lg font-semibold mb-2 text-primary">{service.title}</h3>
                   <p className="text-gray-600 text-sm">{service.description}</p>
