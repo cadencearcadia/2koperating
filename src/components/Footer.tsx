@@ -8,7 +8,6 @@ const Footer = () => {
     <footer className="bg-primary text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Company Info */}
           <div className="space-y-4">
             <img 
               src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
@@ -21,8 +20,6 @@ const Footer = () => {
               Your trusted partner in transportation and logistics solutions.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
@@ -43,7 +40,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
@@ -66,7 +62,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           {/* Social Media */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
@@ -90,8 +85,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-6 pt-4 border-t border-white/10 text-center text-sm bg-[#1A1F2C] py-3">
-          <p className="text-gray-300">© {currentYear} 2K Operating LLC. All rights reserved.</p>
+        <div className="mt-8 border-t border-white/10">
+          <div className="py-4 text-center text-sm bg-[#0B0F1A] text-gray-300">
+            <p className="font-light tracking-wide">
+              © {currentYear} 2K Operating LLC. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
