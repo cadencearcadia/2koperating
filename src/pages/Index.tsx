@@ -1,11 +1,15 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ChevronDown } from "lucide-react";
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Newsletter from "@/components/Newsletter";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [ref, inView] = useInView({
@@ -15,6 +19,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Navigation />
       <Hero />
       
       <motion.div
@@ -26,11 +31,14 @@ const Index = () => {
         <ChevronDown className="w-6 h-6 text-gray-600" />
       </motion.div>
 
-      <div ref={ref} className="container mx-auto px-4 py-16 space-y-32">
+      <div ref={ref} className="space-y-0">
         <Services />
         <Stats />
         <About />
+        <Testimonials />
+        <Newsletter />
         <Contact />
+        <Footer />
       </div>
     </div>
   );
