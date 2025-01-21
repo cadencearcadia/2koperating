@@ -20,7 +20,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-purple-600 text-white">
+    <section ref={ref} className="py-20 bg-primary text-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const Newsletter = () => {
               className="max-w-sm bg-white/10 text-white placeholder:text-white/70 border-white/20"
               required
             />
-            <Button className="bg-white text-purple-600 hover:bg-white/90">
+            <Button className="bg-white text-primary hover:bg-white/90">
               Subscribe Now
             </Button>
           </form>
