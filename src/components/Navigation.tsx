@@ -7,9 +7,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "CDL Driver Application", href: "#cdl-application" },
+    { label: "New Customer Form", href: "#new-customer" },
   ];
 
   return (
@@ -37,8 +37,11 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              Get Started
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => window.location.href = '#contact'}
+            >
+              Contact Us
             </Button>
           </div>
 
@@ -72,8 +75,11 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
-              Get Started
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90 text-white mt-4"
+              onClick={() => window.location.href = '#contact'}
+            >
+              Contact Us
             </Button>
           </div>
         </motion.div>
