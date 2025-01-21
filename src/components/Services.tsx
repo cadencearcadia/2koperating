@@ -42,7 +42,7 @@ const Services = () => {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-6">
-                    <Icon className="w-12 h-12 text-gray-700" strokeWidth={1.5} />
+                    <Icon className="w-12 h-12 text-[#f3ce49]" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{service.description}</p>

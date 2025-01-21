@@ -31,8 +31,8 @@ const About = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center"
             >
-              <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
-                <Building2 className="w-6 h-6 text-primary" />
+              <div className="inline-block p-3 bg-[#f3ce49]/10 rounded-full mb-4">
+                <Building2 className="w-6 h-6 text-[#f3ce49]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">18+ Years</h3>
               <p className="text-gray-600">Serving East Texas</p>
@@ -44,8 +44,8 @@ const About = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center"
             >
-              <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
-                <Users className="w-6 h-6 text-primary" />
+              <div className="inline-block p-3 bg-[#f3ce49]/10 rounded-full mb-4">
+                <Users className="w-6 h-6 text-[#f3ce49]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Expert Drivers</h3>
               <p className="text-gray-600">5+ Years Experience</p>
@@ -57,8 +57,8 @@ const About = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center"
             >
-              <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
-                <Clock className="w-6 h-6 text-primary" />
+              <div className="inline-block p-3 bg-[#f3ce49]/10 rounded-full mb-4">
+                <Clock className="w-6 h-6 text-[#f3ce49]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">24/7 Service</h3>
               <p className="text-gray-600">Always Available</p>
@@ -70,8 +70,8 @@ const About = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="bg-white p-6 rounded-lg shadow-lg text-center"
             >
-              <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
-                <Shield className="w-6 h-6 text-primary" />
+              <div className="inline-block p-3 bg-[#f3ce49]/10 rounded-full mb-4">
+                <Shield className="w-6 h-6 text-[#f3ce49]" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Fully Insured</h3>
               <p className="text-gray-600">Bonded & Protected</p>
