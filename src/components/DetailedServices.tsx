@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Truck, Droplet, Tank, Gauge, Container, Activity, Settings, PumpGenerator } from "lucide-react";
+import { Truck, Droplet, Container, Gauge, Activity, Settings, Cylinder, PumpIcon } from "lucide-react";
 
 const services = [
   {
@@ -21,7 +21,7 @@ const services = [
   {
     title: "Rig and Storage Tank Clean Outs",
     description: "Comprehensive cleaning services for rigs and storage tanks",
-    icon: Tank,
+    icon: Cylinder,
   },
   {
     title: "Color Cut and Gauging Tanks",
@@ -41,7 +41,7 @@ const services = [
   {
     title: "Contract Pumping",
     description: "Reliable contract pumping solutions",
-    icon: PumpGenerator,
+    icon: PumpIcon,
   },
 ];
 
