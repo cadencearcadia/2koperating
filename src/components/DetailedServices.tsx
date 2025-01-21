@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Truck, Droplet, Container, Gauge, Activity, Settings, Cylinder, PumpIcon } from "lucide-react";
+import { Truck, Droplet, Container, Gauge, Activity, Settings, Cylinder } from "lucide-react";
 
 const services = [
   {
@@ -41,7 +41,7 @@ const services = [
   {
     title: "Contract Pumping",
     description: "Reliable contract pumping solutions",
-    icon: PumpIcon,
+    icon: Activity,
   },
 ];
 
