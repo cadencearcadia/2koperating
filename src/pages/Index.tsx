@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Newsletter from "@/components/Newsletter";
+import DetailedServices from "@/components/DetailedServices";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -30,9 +31,10 @@ const Index = () => {
       </motion.div>
 
       <div ref={ref} className="space-y-0">
-        <Services />
         <About />
+        <Services />
         <Newsletter />
+        <DetailedServices />
         <Contact />
         <Footer />
       </div>
