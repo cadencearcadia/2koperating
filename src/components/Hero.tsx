@@ -7,8 +7,8 @@ const Hero = () => {
       
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/03192f37-f54d-4301-b7a0-e5bab6140cd3.png"
-          alt="Oil field at sunset with tanker truck on road"
+          src="/lovable-uploads/15b4175b-f406-4edb-8732-da7c6cffb54b.png"
+          alt="Oil tanker truck on road at sunset with oil field in background"
           className="w-full h-full object-cover"
           loading="eager"
           decoding="async"
