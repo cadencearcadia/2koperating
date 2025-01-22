@@ -51,7 +51,6 @@ export default function CDLApplication() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values)
-    // Here you would typically send the form data to your backend
     toast({
       title: "Application Submitted",
       description: "We'll review your application and contact you soon.",
@@ -64,12 +63,22 @@ export default function CDLApplication() {
       
       <div className="container mx-auto px-4 py-8 mt-16">
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight">CDL Driver Application</h1>
-            <h2 className="text-2xl font-semibold text-muted-foreground">CDL Roll off Driver – Full time, Year-round employment</h2>
+          {/* Side by Side Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="space-y-4">
-              <p className="text-lg">2k Operating LLC – Richland, TX</p>
-              <p className="text-xl font-semibold">$40,000 – $70,000 a year</p>
+              <h1 className="text-4xl font-bold tracking-tight">CDL Driver Application</h1>
+              <h2 className="text-2xl font-semibold text-muted-foreground">CDL Roll off Driver – Full time, Year-round employment</h2>
+              <div className="space-y-4">
+                <p className="text-lg">2k Operating LLC – Richland, TX</p>
+                <p className="text-xl font-semibold">$40,000 – $70,000 a year</p>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="/lovable-uploads/oil-gas-image.jpg" 
+                alt="Oil & Gas Operations" 
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
 
