@@ -17,6 +17,15 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="space-y-12"
         >
+          <div className="relative w-full h-[400px] mb-12 rounded-lg overflow-hidden">
+            <img
+              src="/lovable-uploads/8e34c2f6-0d44-4b81-ae9d-b86f09fc34ea.png"
+              alt="Oil field equipment and pipes"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+          </div>
+
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold mb-6 text-primary">About Our Company</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
