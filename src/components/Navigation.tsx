@@ -17,7 +17,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <a href="/" className="flex items-center" aria-label="Go to homepage">
               <img 
                 src="/2klogositeSM.webp" 
                 alt="2K Operating LLC Logo" 
@@ -35,6 +35,7 @@ const Navigation = () => {
                 key={item.label}
                 href={item.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </a>
@@ -42,6 +43,7 @@ const Navigation = () => {
             <Button 
               className="bg-primary hover:bg-primary/90 text-white"
               onClick={() => window.location.href = '#contact'}
+              aria-label="Contact Us"
             >
               Contact Us
             </Button>
@@ -52,6 +54,8 @@ const Navigation = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-600"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X /> : <Menu />}
             </button>
@@ -73,6 +77,7 @@ const Navigation = () => {
                 key={item.label}
                 href={item.href}
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
+                aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </a>
@@ -80,6 +85,7 @@ const Navigation = () => {
             <Button 
               className="w-full bg-primary hover:bg-primary/90 text-white mt-4"
               onClick={() => window.location.href = '#contact'}
+              aria-label="Contact Us"
             >
               Contact Us
             </Button>

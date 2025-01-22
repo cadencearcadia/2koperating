@@ -35,6 +35,7 @@ const Hero = () => {
             <a
               href="tel:9035053409"
               className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-md text-base md:text-xl transition-colors duration-300"
+              aria-label="Call truck dispatch at (903) 505-3409"
             >
               TRUCK DISPATCH (903) 505-3409
             </a>
