@@ -24,7 +24,7 @@ const Hero = () => {
           className="space-y-6 md:space-y-10"
         >
           <h1 className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-tight">
-            "WE GUARANTEE TO BEAT OUR COMPETITORS RATES"
+            WE GUARANTEE TO BEAT OUR COMPETITORS RATES
           </h1>
           
           <motion.div
