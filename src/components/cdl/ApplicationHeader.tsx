@@ -13,7 +13,7 @@ const ApplicationHeader = () => {
       </div>
       <div className="hidden md:block">
        <img 
-  src="/public/trucker-tanker.webp" 
+  src="/trucker-tanker.webp" 
   alt="Oil & Gas Operations" 
   className="w-full h-64 object-contain rounded-lg shadow-lg"
 />
