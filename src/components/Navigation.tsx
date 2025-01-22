@@ -19,7 +19,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/3fb860a1-82bc-46a4-a254-c5620d667dff.png" 
+                src="/2klogositeSM.webp" 
                 alt="2K Operating LLC Logo" 
                 className="h-12 w-auto"
                 loading="eager"
