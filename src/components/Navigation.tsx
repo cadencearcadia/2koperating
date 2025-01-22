@@ -8,8 +8,8 @@ const Navigation = () => {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "CDL Driver Application", href: "#cdl-application" },
-    { label: "New Customer Form", href: "#new-customer" },
+    { label: "CDL Driver Application", href: "/cdl-application" },
+    { label: "New Customer Form", href: "/new-customer" },
   ];
 
   return (
