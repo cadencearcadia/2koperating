@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
+              src="/lovable-uploads/a34254fd-3889-4e70-bf49-33b03dc5c00d.png" 
               alt="2K Operating LLC Logo" 
               className="h-12 w-auto"
               loading="lazy"
