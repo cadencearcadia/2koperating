@@ -7,7 +7,7 @@ const Hero = () => {
       
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/15b4175b-f406-4edb-8732-da7c6cffb54b.png"
+          src="/truckfrontpage.webp"
           alt="Oil tanker truck on road at sunset with oil field in background"
           className="w-full h-full object-cover"
           loading="eager"
