@@ -15,7 +15,7 @@ const ApplicationHeader = () => {
        <img 
   src="/trucker-tanker2.webp" 
   alt="Oil & Gas Operations" 
-  className="w-full h-64 object-contain rounded-lg shadow-lg"
+  className="w-full h-64 object-cover rounded-lg shadow-lg"
 />
       </div>
     </div>
