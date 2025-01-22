@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -19,9 +19,11 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/20f857c4-e96b-4057-a851-3666e100409e.png" 
+                src="/lovable-uploads/3fb860a1-82bc-46a4-a254-c5620d667dff.png" 
                 alt="2K Operating LLC Logo" 
                 className="h-12 w-auto"
+                loading="eager"
+                decoding="async"
               />
             </a>
           </div>
