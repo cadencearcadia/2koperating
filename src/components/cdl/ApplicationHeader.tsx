@@ -11,11 +11,11 @@ const ApplicationHeader = () => {
           <p className="text-xl font-semibold">$40,000 – $70,000 a year</p>
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:block h-64 w-full">
         <img 
-          src="/public/trucker-tanker.webp" 
-          alt="Oil & Gas Operations" 
-          className="w-full h-64 object-cover rounded-lg shadow-lg"
+          src="/lovable-uploads/8281520b-b1eb-445b-8b7f-65fc07773cf3.png"
+          alt="Professional truck driver standing in front of a commercial truck" 
+          className="w-full h-full object-cover rounded-lg shadow-lg"
         />
       </div>
     </div>
