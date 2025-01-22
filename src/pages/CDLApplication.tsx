@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import ApplicationHeader from "@/components/cdl/ApplicationHeader";
 import JobDescription from "@/components/cdl/JobDescription";
 import ApplicationForm from "@/components/cdl/ApplicationForm";
+import Footer from "@/components/Footer";
 
 export default function CDLApplication() {
   return (
@@ -15,6 +16,8 @@ export default function CDLApplication() {
           <ApplicationForm />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
