@@ -17,10 +17,6 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="space-y-12"
         >
-          <div className="relative w-full h-[400px] mb-12 rounded-lg overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
-          </div>
-
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold mb-6 text-primary">About Our Company</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
