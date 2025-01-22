@@ -10,7 +10,7 @@ const Hero = () => {
           src="/lovable-uploads/03192f37-f54d-4301-b7a0-e5bab6140cd3.png"
           alt="Oil field at sunset with tanker truck on road"
           className="w-full h-full object-cover"
-          loading="lazy"
+          loading="eager"
           decoding="async"
           fetchPriority="high"
         />
