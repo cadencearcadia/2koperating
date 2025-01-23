@@ -33,18 +33,18 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="flex flex-col md:flex-row items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4 max-w-xl mx-auto"
           >
             <a
               href="tel:9035053409"
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-md text-base md:text-xl transition-colors duration-300"
+              className="w-full md:w-auto inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-md text-base md:text-xl transition-colors duration-300"
               aria-label="Call truck dispatch at (903) 505-3409"
             >
               TRUCK DISPATCH (903) 505-3409
             </a>
             <Button
               onClick={() => window.location.href = '/contact-us'}
-              className="bg-white/90 hover:bg-white text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 text-base md:text-xl"
+              className="w-full md:w-auto bg-white/90 hover:bg-white text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 text-base md:text-xl"
               aria-label="Contact Us"
             >
               Contact Us
