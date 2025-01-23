@@ -26,6 +26,11 @@ const Footer = () => {
                   New Customer Form
                 </a>
               </li>
+              <li>
+                <a href="/contact-us" className="hover:text-gray-200 transition-colors">
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
 
