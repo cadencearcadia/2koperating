@@ -57,7 +57,7 @@ const Footer = () => {
             <img
               src="/18years.webp"
               alt="18 Years of Excellence"
-              className="w-full max-w-[300px] h-auto object-contain rounded-lg"
+              className="w-full max-w-[150px] h-auto object-contain rounded-lg"
               loading="lazy"
             />
           </div>
