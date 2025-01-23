@@ -44,7 +44,7 @@ const Hero = () => {
             </a>
             <Button
               onClick={() => window.location.href = '/contact-us'}
-              className="w-full md:w-auto bg-white/90 hover:bg-white text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 text-base md:text-xl"
+              className="w-full md:w-auto bg-white/90 hover:bg-white text-gray-900 font-semibold px-8 md:px-8 py-3 md:py-4 text-base md:text-xl"
               aria-label="Contact Us"
             >
               Contact Us
