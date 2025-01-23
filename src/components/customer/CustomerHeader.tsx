@@ -15,7 +15,7 @@ const CustomerHeader = () => {
       </div>
       <div className="hidden md:block">
         <img 
-          src="/shaking-hands.webp"
+          src="/shaking-hands-tx.webp"
           alt="Two business men shaking hands" 
           className="w-full h-64 object-cover rounded-lg shadow-lg"
         />
