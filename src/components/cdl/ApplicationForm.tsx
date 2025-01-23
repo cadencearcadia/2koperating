@@ -70,10 +70,27 @@ const ApplicationForm = () => {
       return;
     }
 
-    console.log(values);
+    // Format email content
+    const emailSubject = encodeURIComponent("New CDL Driver Application");
+    const emailBody = encodeURIComponent(`
+New CDL Driver Application
+
+Name: ${values.name}
+Address: ${values.address}
+Phone: ${values.phone}
+Email: ${values.email}
+License Number: ${values.licenseNumber}
+Date of Birth: ${format(values.dateOfBirth, 'MM/dd/yyyy')}
+Years of Experience: ${values.yearsExperience}
+Tanker Endorsement: ${values.tankerEndorsement}
+    `);
+
+    // Open default email client
+    window.location.href = `mailto:info@2koperating.com?subject=${emailSubject}&body=${emailBody}`;
+
     toast({
-      title: "Application Submitted",
-      description: "We'll review your application and contact you soon.",
+      title: "Application Ready",
+      description: "Opening your email client to send the application.",
     });
   }
 
