@@ -22,6 +22,9 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import ReCaptchaComponent from "../common/ReCaptcha";
+import { checkRateLimit } from "@/utils/rateLimiting";
+import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -40,6 +43,7 @@ const formSchema = z.object({
 
 const ApplicationForm = () => {
   const { toast } = useToast();
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,12 +52,32 @@ const ApplicationForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    if (!captchaToken) {
+      toast({
+        title: "Error",
+        description: "Please complete the CAPTCHA verification",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (!checkRateLimit('cdl-application')) {
+      toast({
+        title: "Rate Limit Exceeded",
+        description: "Please wait before submitting another application",
+        variant: "destructive",
+      });
+      return;
+    }
+
     console.log(values);
     toast({
       title: "Application Submitted",
       description: "We'll review your application and contact you soon.",
     });
   }
+
+  // ... keep existing code (form fields JSX)
 
   return (
     <div className="bg-card p-8 rounded-lg shadow-sm">
@@ -227,6 +251,8 @@ const ApplicationForm = () => {
               </FormItem>
             )}
           />
+          
+          <ReCaptchaComponent onChange={setCaptchaToken} />
 
           <Button type="submit" className="w-full">Submit Application</Button>
         </form>

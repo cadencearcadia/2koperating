@@ -19,6 +19,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import ReCaptchaComponent from "../common/ReCaptcha";
+import { checkRateLimit } from "@/utils/rateLimiting";
+import { useState } from "react";
 
 const formSchema = z.object({
   businessName: z.string().min(2, "Business name must be at least 2 characters"),
@@ -45,11 +48,30 @@ const formSchema = z.object({
 
 const NewCustomerForm = () => {
   const { toast } = useToast();
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    if (!captchaToken) {
+      toast({
+        title: "Error",
+        description: "Please complete the CAPTCHA verification",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (!checkRateLimit('new-customer')) {
+      toast({
+        title: "Rate Limit Exceeded",
+        description: "Please wait before submitting another application",
+        variant: "destructive",
+      });
+      return;
+    }
+
     console.log(values);
     toast({
       title: "Form Submitted",
@@ -372,6 +394,8 @@ const NewCustomerForm = () => {
             )}
           />
         </div>
+
+        <ReCaptchaComponent onChange={setCaptchaToken} />
 
         <Button type="submit" className="w-full">Submit Application</Button>
       </form>
