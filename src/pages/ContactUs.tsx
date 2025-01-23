@@ -13,7 +13,7 @@ const ContactUs = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b")',
+            backgroundImage: '/contact-us-banner.webp',
           }}
         >
           <div className="absolute inset-0 bg-primary/60" />
