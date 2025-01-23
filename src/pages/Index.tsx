@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Banner from "@/components/Banner";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
@@ -19,6 +20,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <Banner />
       <Hero />
       
       <motion.div
