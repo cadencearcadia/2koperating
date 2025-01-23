@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import CDLApplication from "./pages/CDLApplication";
 import NewCustomer from "./pages/NewCustomer";
+import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/cdl-application" element={<CDLApplication />} />
           <Route path="/new-customer" element={<NewCustomer />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

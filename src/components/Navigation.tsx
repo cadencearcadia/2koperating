@@ -10,6 +10,7 @@ const Navigation = () => {
     { label: "Home", href: "/", icon: <Home className="w-5 h-5" aria-hidden="true" /> },
     { label: "CDL Driver Application", href: "/cdl-application", icon: <Truck className="w-5 h-5" aria-hidden="true" /> },
     { label: "New Customer Form", href: "/new-customer", icon: <UserPlus className="w-5 h-5" aria-hidden="true" /> },
+    { label: "Contact Us", href: "/contact-us", icon: <Phone className="w-5 h-5" aria-hidden="true" /> },
   ];
 
   return (
@@ -40,13 +41,6 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button 
-              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary"
-              onClick={() => window.location.href = '#contact'}
-              aria-label="Contact Us"
-            >
-              Contact Us
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,14 +77,6 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button 
-              className="w-full bg-primary-foreground hover:bg-primary-foreground/90 text-primary mt-4 flex items-center justify-center gap-2"
-              onClick={() => window.location.href = '#contact'}
-              aria-label="Contact Us"
-            >
-              <Phone className="w-5 h-5" aria-hidden="true" />
-              Contact Us
-            </Button>
           </div>
         </motion.div>
       )}
