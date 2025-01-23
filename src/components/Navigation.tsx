@@ -69,7 +69,7 @@ const Navigation = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden bg-primary border-b border-primary/20"
+          className="md:hidden bg-primary/80 border-b border-primary/20"
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => (
