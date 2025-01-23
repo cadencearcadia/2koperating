@@ -35,8 +35,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+1234567890" className="hover:text-gray-200 transition-colors">
-                  (123) 456-7890
+                <a href="tel:+9035053409" className="hover:text-gray-200 transition-colors">
+                (903) 505-3409
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Dallas, TX</span>
+                <span>507 Interstate Highway 45, Richland, TX 76681</span>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
             <h2 className="text-lg font-semibold">Our Achievements</h2>
             <div className="relative h-48 w-full overflow-hidden rounded-lg">
               <img
-                src="/placeholder.svg"
+                src="/18years.webp"
                 alt="Company Achievements"
                 className="object-cover w-full h-full"
                 loading="lazy"
