@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -32,6 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
+            className="flex flex-col md:flex-row items-center justify-center gap-4"
           >
             <a
               href="tel:9035053409"
@@ -40,6 +42,13 @@ const Hero = () => {
             >
               TRUCK DISPATCH (903) 505-3409
             </a>
+            <Button
+              onClick={() => window.location.href = '/contact-us'}
+              className="bg-white/90 hover:bg-white text-gray-900 font-semibold px-6 md:px-8 py-3 md:py-4 text-base md:text-xl"
+              aria-label="Contact Us"
+            >
+              Contact Us
+            </Button>
           </motion.div>
         </motion.div>
       </div>
