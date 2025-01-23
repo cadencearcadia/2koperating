@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, Truck, UserPlus, Phone } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -7,13 +7,13 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "Home", href: "/" },
-    { label: "CDL Driver Application", href: "/cdl-application" },
-    { label: "New Customer Form", href: "/new-customer" },
+    { label: "Home", href: "/", icon: <Home className="w-5 h-5" aria-hidden="true" /> },
+    { label: "CDL Driver Application", href: "/cdl-application", icon: <Truck className="w-5 h-5" aria-hidden="true" /> },
+    { label: "New Customer Form", href: "/new-customer", icon: <UserPlus className="w-5 h-5" aria-hidden="true" /> },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/80 backdrop-blur-md border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -34,14 +34,14 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-primary-foreground hover:text-white/90 transition-colors"
                 aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </a>
             ))}
             <Button 
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary"
               onClick={() => window.location.href = '#contact'}
               aria-label="Contact Us"
             >
@@ -53,11 +53,11 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600"
+              className="text-primary-foreground p-2"
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
             >
-              {isMenuOpen ? <X /> : <Menu />}
+              {isMenuOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -69,24 +69,26 @@ const Navigation = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden bg-white border-b"
+          className="md:hidden bg-primary border-b border-primary/20"
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
             {menuItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md"
+                className="flex items-center gap-3 px-3 py-2 text-primary-foreground hover:text-white/90 hover:bg-primary/90 rounded-md"
                 aria-label={`Navigate to ${item.label}`}
               >
+                {item.icon}
                 {item.label}
               </a>
             ))}
             <Button 
-              className="w-full bg-primary hover:bg-primary/90 text-white mt-4"
+              className="w-full bg-primary-foreground hover:bg-primary-foreground/90 text-primary mt-4 flex items-center justify-center gap-2"
               onClick={() => window.location.href = '#contact'}
               aria-label="Contact Us"
             >
+              <Phone className="w-5 h-5" aria-hidden="true" />
               Contact Us
             </Button>
           </div>
