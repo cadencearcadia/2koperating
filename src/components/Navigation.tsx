@@ -10,7 +10,6 @@ const Navigation = () => {
     { label: "Home", href: "/", icon: <Home className="w-5 h-5" aria-hidden="true" /> },
     { label: "CDL Driver Application", href: "/cdl-application", icon: <Truck className="w-5 h-5" aria-hidden="true" /> },
     { label: "New Customer Form", href: "/new-customer", icon: <UserPlus className="w-5 h-5" aria-hidden="true" /> },
-    { label: "Contact Us", href: "/contact-us", icon: <Phone className="w-5 h-5" aria-hidden="true" /> },
   ];
 
   return (
