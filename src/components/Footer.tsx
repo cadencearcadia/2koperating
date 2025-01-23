@@ -53,21 +53,13 @@ const Footer = () => {
           </div>
 
           {/* Accomplishments Column */}
-          <div className="space-y-4">
-            <h2 className="text-lg font-semibold">Our Achievements</h2>
-            <div className="relative h-48 w-full overflow-hidden rounded-lg">
-              <img
-                src="/18years.webp"
-                alt="Company Achievements"
-                className="object-cover w-full h-full"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <p className="text-white text-lg font-semibold">
-                  Trusted by Industry Leaders
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="/18years.webp"
+              alt="18 Years of Excellence"
+              className="w-full max-w-[300px] h-auto object-contain rounded-lg"
+              loading="lazy"
+            />
           </div>
         </div>
 
