@@ -19,7 +19,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="flex items-center" aria-label="Go to homepage">
               <img 
-                src="/2klogositeSM.webp" 
+                src="/2klogositeSM-WH.webp" 
                 alt="2K Operating LLC Logo" 
                 className="h-12 w-auto"
                 loading="eager"
