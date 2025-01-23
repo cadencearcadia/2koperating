@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Accomplishments Column */}
           <div className="flex items-center justify-center">
             <img
-              src="/18years.webp"
+              src="/19years.webp"
               alt="18 Years of Excellence"
               className="w-full max-w-[150px] h-auto object-contain rounded-lg"
               loading="lazy"
