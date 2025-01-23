@@ -41,6 +41,13 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
+            <Button 
+              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary"
+              onClick={() => window.location.href = '/contact-us'}
+              aria-label="Contact Us"
+            >
+              Contact Us
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,6 +84,14 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
+            <Button 
+              className="w-full bg-primary-foreground hover:bg-primary-foreground/90 text-primary mt-4 flex items-center justify-center gap-2"
+              onClick={() => window.location.href = '/contact-us'}
+              aria-label="Contact Us"
+            >
+              <Phone className="w-5 h-5" aria-hidden="true" />
+              Contact Us
+            </Button>
           </div>
         </motion.div>
       )}
